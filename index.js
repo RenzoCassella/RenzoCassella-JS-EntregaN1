@@ -60,11 +60,11 @@ function Guardar() {
   localStorage.setItem('articulos', JSON.stringify(data));
   clearForm();
   renderItem();
-
+/* Libreria Sweet Alert */
   Swal.fire({
     position: 'top-mid',
     icon: 'success',
-    title: 'Guardo con éxito',
+    title: 'Guardado con éxito',
     showConfirmButton: false,
     timer: 3000
   })
@@ -77,7 +77,7 @@ function Editar(codigo) {
   document.querySelector('#descripcion').value = articulo.descripcion;
   document.querySelector('#precio').value = articulo.precio;
   document.querySelector('#cantidad').value = articulo.cantidad;
-
+/* Libreria Sweet Alert */
   Swal.fire({
     title: 'Deseas editar?',
     icon: 'question',
@@ -87,7 +87,7 @@ function Editar(codigo) {
     showCancelButton: true,
     showCloseButton: true
   })
-  
+
   let rubro = document.getElementById("rubro");
   rubro.value = articulo.rubro;
   editar = true;
