@@ -60,6 +60,14 @@ function Guardar() {
   localStorage.setItem('articulos', JSON.stringify(data));
   clearForm();
   renderItem();
+
+  Swal.fire({
+    position: 'top-mid',
+    icon: 'success',
+    title: 'Guardo con éxito',
+    showConfirmButton: false,
+    timer: 3000
+  })
 }
 
 function Editar(codigo) {
@@ -70,6 +78,16 @@ function Editar(codigo) {
   document.querySelector('#precio').value = articulo.precio;
   document.querySelector('#cantidad').value = articulo.cantidad;
 
+  Swal.fire({
+    title: 'Deseas editar?',
+    icon: 'question',
+    iconHtml: '؟',
+    confirmButtonText: 'Si',
+    cancelButtonText: 'No',
+    showCancelButton: true,
+    showCloseButton: true
+  })
+  
   let rubro = document.getElementById("rubro");
   rubro.value = articulo.rubro;
   editar = true;
@@ -82,6 +100,7 @@ function Eliminar(codigo) {
   data.splice(index, 1);
   localStorage.setItem('articulos', JSON.stringify(data));
   renderItem();
+  
 }
 
 renderItem();
