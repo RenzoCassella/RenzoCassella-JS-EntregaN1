@@ -1,0 +1,44 @@
+[
+  {
+    "codigo": "1",
+    "descripcion": "articulo 1",
+    "precio": "100",
+    "cantidad": "50",
+    "rubro": "bebidas"
+  },
+  {
+    "codigo": "2",
+    "descripcion": "articulo 2",
+    "precio": "100",
+    "cantidad": "50",
+    "rubro": "bebidas"
+  },
+  {
+    "codigo": "3",
+    "descripcion": "articulo 3",
+    "precio": "100",
+    "cantidad": "50",
+    "rubro": "bebidas"
+  },
+  {
+    "codigo": "4",
+    "descripcion": "articulo 5",
+    "precio": "100",
+    "cantidad": "50",
+    "rubro": "bebidas"
+  },
+  {
+    "codigo": "6",
+    "descripcion": "articulo 6",
+    "precio": "100",
+    "cantidad": "50",
+    "rubro": "bebidas"
+  },
+  {
+    "codigo": "7",
+    "descripcion": "articulo 7",
+    "precio": "100",
+    "cantidad": "50",
+    "rubro": "bebidas"
+  }
+]

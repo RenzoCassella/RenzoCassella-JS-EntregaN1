@@ -1,6 +1,15 @@
 let editar = false;
 let formulario = document.getElementById("formulario");
-let data = JSON.parse(localStorage.getItem('articulos')) || [];
+let data = [];
+
+fetch("json.json") 
+  .then(res => res.json())
+  .then(json => {
+  data = json
+  renderItem()
+  })
+  .catch(err => console.log("Hubo un error:", err))
+  
 
 function clearForm() {
   formulario.reset();
@@ -103,4 +112,3 @@ function Eliminar(codigo) {
   
 }
 
-renderItem();
